@@ -1,4 +1,4 @@
-package com.fahimshahrierrasel.kotlinsandbox.ui.tabviewpager
+package com.fahimshahrierrasel.androidsandbox.ui.tabviewpager
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,10 +8,19 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.fahimshahrierrasel.kotlinsandbox.R
+import com.fahimshahrierrasel.androidsandbox.R
 import com.google.android.material.tabs.TabLayout
 
 class ViewPagerFragment : Fragment() {
+
+    companion object {
+        @JvmStatic
+        fun newInstance(bundle: Bundle) =
+            PageFragment().apply {
+                arguments = bundle
+            }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,15 +43,9 @@ class ViewPagerFragment : Fragment() {
 
     }
 
-    companion object {
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            PageFragment().apply {
-                arguments = Bundle()
-            }
-    }
 
-    private inner class ScreenSlidePagerAdapter(fa: FragmentManager) : FragmentStatePagerAdapter(fa) {
+    private inner class ScreenSlidePagerAdapter(fa: FragmentManager) :
+        FragmentStatePagerAdapter(fa) {
         override fun getItem(position: Int): Fragment =
             PageFragment()
 

@@ -1,4 +1,4 @@
-package com.fahimshahrierrasel.kotlinsandbox.ui.helpers
+package com.fahimshahrierrasel.androidsandbox.ui.custom_widgets
 
 import android.content.Context
 import android.text.Editable
@@ -11,7 +11,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.LinearLayout
 import androidx.annotation.Nullable
-import com.fahimshahrierrasel.kotlinsandbox.R
+import com.fahimshahrierrasel.androidsandbox.R
 
 class EditTextOtp : LinearLayout, View.OnFocusChangeListener, TextWatcher, View.OnKeyListener {
 

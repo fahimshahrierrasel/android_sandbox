@@ -1,4 +1,4 @@
-package com.fahimshahrierrasel.kotlinsandbox
+package com.fahimshahrierrasel.androidsandbox
 
 import org.junit.Test
 

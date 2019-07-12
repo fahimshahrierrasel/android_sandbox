@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              tools:context=".ui.tabviewpager.PageFragment"
-              android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.tabviewpager.PageFragment">
 
-    <com.fahimshahrierrasel.kotlinsandbox.ui.helpers.EditTextOtp android:layout_width="match_parent"
-                                                                 android:layout_height="60dp"
-                                                                 android:id="@+id/otpView"/>
+    <com.fahimshahrierrasel.androidsandbox.ui.custom_widgets.EditTextOtp
+        android:id="@+id/otpView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

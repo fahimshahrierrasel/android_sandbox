@@ -1,4 +1,4 @@
-package com.fahimshahrierrasel.kotlinsandbox.ui.tabviewpager
+package com.fahimshahrierrasel.androidsandbox.ui.tabviewpager
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.fahimshahrierrasel.kotlinsandbox.R
+import com.fahimshahrierrasel.androidsandbox.R
 import kotlinx.android.synthetic.main.fragment_page.*
 
 class PageFragment : Fragment() {
